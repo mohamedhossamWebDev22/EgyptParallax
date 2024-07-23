@@ -1,5 +1,3 @@
-import { useState } from "react";
-
 import { Parallax, ParallaxLayer } from "@react-spring/parallax";
 
 import img1 from "./assets/2.jpg";
@@ -10,7 +8,7 @@ import img4 from "./assets/4.jpg";
 function App() {
   return (
     <>
-      <Parallax pages={5}>
+      <Parallax className="ss" pages={5}>
         {/* photos */}
         <ParallaxLayer
           offset={0}
