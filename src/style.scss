@@ -1,0 +1,88 @@
+$font1: "Roboto", sans-serif;
+$font2: "Fondamento", cursive;
+$bg: #fecc66;
+$c1: white;
+$c2: #daae58;
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background: $bg;
+  color: white;
+
+  text-align: center;
+  h1{
+    font-family: $font2;
+    font-size: 100px;
+
+    text-shadow: 0px 0px 8px $c2;
+  }
+
+  .info{
+    font-size: 25px;
+
+    backdrop-filter: blur(5px);
+
+    padding: 20px;
+    padding-left: 10%;
+    padding-right: 10%;
+
+    margin-left: 10%;
+    margin-right: 10%;
+
+    border-radius: 15px;
+    box-shadow: 0px 0px 8px $c2;
+    p{
+      font-family: $font1;
+    }
+
+    button{
+      cursor: pointer;
+
+      background: $c2;
+      color: white;
+
+      border: 0;
+      border-radius: 10px;
+
+      padding: 2%;
+
+      box-shadow: 0px 0px 4px $c2;
+      &:hover{
+        filter:saturate(5);
+        box-shadow: 0px 0px 8px $c2;
+      }
+    }
+  }
+
+  h3{
+    font-family: $font1;
+    font-weight: lighter;
+
+    font-size: 40px;
+  }
+
+  .bT{
+    background: $c2;
+    border-radius: $c2;
+
+    padding: 2%;
+
+    width: 20px;
+
+    position: fixed;
+    right: 10px;
+
+    border-radius: 10px;
+    a{
+      color: white;
+
+      text-decoration: 0;
+
+      font-size: 10px;
+    }
+  }
+}
